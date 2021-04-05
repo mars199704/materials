@@ -1,0 +1,112 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.background1, .background2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.background1 {
+  z-index: -1;
+  -webkit-clip-path: polygon(69% 77%, 100% 46%, 100% 100%, 0% 100%);
+          clip-path: polygon(69% 77%, 100% 46%, 100% 100%, 0% 100%);
+  background-color: #226dbc;
+}
+
+.background2 {
+  z-index: -2;
+  background-color: #2a5f98;
+  -webkit-clip-path: polygon(54% 71%, 100% 27%, 100% 100%, 0% 100%);
+          clip-path: polygon(54% 71%, 100% 27%, 100% 100%, 0% 100%);
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto;
+      grid-template-columns: 50% auto;
+  -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 50px;
+}
+
+ul {
+  list-style: none;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+ul li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% auto;
+      grid-template-columns: 20% auto;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  -webkit-transform: rotateY(-30deg) rotateX(15deg);
+          transform: rotateY(-30deg) rotateX(15deg);
+  position: absolute;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+  mix-blend-mode: multiply;
+}
+
+ul li:nth-child(1) {
+  background: #bfe8fc;
+  top: -130px;
+  z-index: 2;
+}
+
+ul li:nth-child(2) {
+  background: #faffc8;
+  z-index: 1;
+}
+
+ul li:nth-child(3) {
+  background: #f2e4ff;
+  top: 130px;
+}
+
+ul li img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 10px;
+}
+
+ul li span {
+  margin: 10px;
+}
+
+ul li:hover {
+  -webkit-transform: rotateY(-22deg) rotateX(7deg) scale(1.1);
+          transform: rotateY(-22deg) rotateX(7deg) scale(1.1);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  z-index: 10;
+  mix-blend-mode: normal;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.left p {
+  color: rga(73, 73, 73);
+  line-height: 1.5em;
+}
+/*# sourceMappingURL=all.css.map */

@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// body{
+//   height: 100vh;
+//   width: 100%;
+//   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+// }
+
+// .nav-links{
+//   height: 10vh;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   margin: 0 10%;
+//   .logo{
+//     color: #fff;
+//     font-size: 2rem;
+//   }
+//   .ham{
+//     position: relative;
+//     height: 5px;
+//     width: 30px;
+//     background-color: #fff;
+//     &::before{
+//       content: '';
+//       position: absolute;
+//       bottom: 10px;
+//       left: 0;
+//       height: 5px;
+//       width: 40px;
+//       background-color: #fff;
+//     }
+//     &::after{
+//       content: '';
+//       position: absolute;
+//       top: 10px;
+//       left: 0;
+//       height: 5px;
+//       width: 20px;
+//       background-color: #fff;
+//     }
+//   }
+// }
+
+// .container{
+//   width: 100%;
+//   position: relative;
+//   img{
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
+//     width: 80%;
+//     height: 70vh;
+//     object-fit: cover;
+//   }
+// }
+
+.slider{
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+nav{
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 10vh;
+  color: #fff;
+  font-size: 24px;
+  align-items: center;
+  .logo{
+    grid-column: 2/3;
+  }
+  i{
+    justify-self: end;
+  }
+}
+
+section{
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  .container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    &::before{
+      content: '';
+      background: #000;
+      opacity: 0.3;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    h1{
+      position: absolute;
+      bottom: 10%;
+      left: 5%;
+      color: #fff;
+      font-size: 5rem;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./all.css">
+</head>
+<body>
+  <svg class="logo" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1040px" height="650px" viewBox="0 0 1600 720" enable-background="new 0 0 1600 720" xml:space="preserve">
+    <g>
+      <path fill="none" stroke="#FFFFFF" stroke-width="6" d="M420.153,450.628h-33.917V305.27h-0.485l-32.463,145.358h-35.613L285.938,305.27h-0.484v145.358h-33.917V276.683h53.056l31.494,137.121h0.485l31.01-137.121h52.571V450.628z"/>
+      <path fill="none" stroke="#FFFFFF" stroke-width="6" d="M512.693,450.628h-36.339V276.683h36.339V450.628z"/>
+      <path fill="none" stroke="#FFFFFF" stroke-width="6" d="M676.947,276.683h33.917v173.945h-36.339l-70.983-124.039h-0.484v124.039H569.14V276.683h38.277l69.045,121.131h0.484V276.683z"/>
+      <path fill="none" stroke="#FFFFFF" stroke-width="6" d="M851.613,356.873h72.679v93.755h-24.227l-3.634-21.804c-9.206,10.659-22.53,26.406-54.267,26.406c-41.912,0-79.947-30.04-79.947-91.091c0-47.483,26.406-92.302,85.034-92.06c53.299,0,74.375,34.644,76.313,58.627h-36.34c0-6.783-12.355-28.587-38.035-28.587c-25.922,0-49.906,17.928-49.906,62.503c0,47.484,25.922,59.84,50.633,59.84c7.995,0,34.644-3.149,42.154-38.278h-40.458V356.873z"/>
+      <path fill="none" stroke="#FFFFFF" stroke-width="6" d="M1126.853,450.628h-36.339v-65.653l-60.082-108.292h42.881l36.098,75.586l34.401-75.586h41.185l-58.144,108.776V450.628z"/>
+      <path fill="none" stroke="#FFFFFF" stroke-width="6" d="M1370.324,389.819c0,45.788-27.618,65.411-71.468,65.411c-15.989,0-39.731-3.876-55.236-21.076c-9.448-10.66-13.082-24.711-13.566-42.154V276.683h37.066v112.894c0,24.227,14.051,34.887,31.01,34.887c24.953,0,35.128-12.113,35.128-33.19v-114.59h37.066V389.819z"/>
+    </g>
+  </svg>
+</body>
+
+<script>
+  const logo = document.querySelectorAll('.logo path')
+  
+  // for (let i = 0; i < logo.length; i++) {
+  //   console.log(`Letter ${i} length = ${logo[i].getTotalLength()}`)
+  // }
+
+  logo.forEach(e => {
+    let length = e.getTotalLength()
+    e.style.strokeDasharray = drawLine  // 0 -> length
+    // e.style.strokeDashoffset = drawLine  // length -> 0
+  })
+
+  // const drawLine = () => {
+  //   const drawLogo = length * calcScroll()
+  //   logo.style.strokeDashoffset = drawLogo
+  // }
+  
+  // const calcScroll = () => {
+  //   let height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+  //   return document.documentElement.scrollTop / height
+  // }
+
+  function drawLine() {
+    console.log(window.scrollY / 5)
+    return window.scrollY
+  }
+
+  window.addEventListener('scroll', drawLine)
+</script>
+
+</html>
+

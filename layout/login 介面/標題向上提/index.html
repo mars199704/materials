@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <form method="post">
+      <div class="text_field">
+        <input type="text" required>
+        <span></span>
+        <label>Username</label>
+      </div>
+      <div class="text_field">
+        <input class="password" type="password" required>
+        <span></span>
+        <label>Password</label>
+
+        <!-- eyes -->
+        <span onclick="hideOrNot()">
+          <i class="unHide fas fa-eye"></i>
+          <i class="hide fas fa-eye-slash"></i>
+        </span>
+
+      </div>
+      <div class="pass">forget password?</div>
+      <input type="submit" value="login">
+      <div class="signup_link">
+        Not a member?<a href="#">Signup</a>
+      </div>
+    </form>
+  </div>
+
+  <script src="./all.js"></script>
+</body>
+</html>

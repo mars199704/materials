@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <div class="toggle"><span></span></div>
+    <ul>
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#services">services</a></li>
+      <li><a href="#work">work</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
+  <div class="page" id="home">home</div>
+  <div class="page" id="about">about</div>
+  <div class="page" id="services">services</div>
+  <div class="page" id="work">work</div>
+  <div class="page" id="contact">contact</div>
+</body>
+
+<script>
+  const nav = document.querySelector('nav')
+  const ham = document.querySelector('.toggle')
+  ham.addEventListener('click', function(){
+    this.classList.toggle('active')
+    nav.classList.toggle('active')
+  })
+</script>
+
+</html>

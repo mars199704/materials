@@ -1,0 +1,260 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #e3e3e3;
+  padding: 20px;
+  font-family: "Roboto Slab", serif;
+}
+
+.header {
+  background: #00BCD4;
+  text-align: center;
+  overflow: hidden;
+}
+
+.text {
+  padding: 30px 10px;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.website {
+  margin: 50px auto;
+  background: #fff;
+  max-width: 700px;
+  -webkit-box-shadow: 0px 25px 30px -20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 25px 30px -20px rgba(0, 0, 0, 0.2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.grid {
+  padding: 10px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.grid .item {
+  background: #ccc;
+  height: 60px;
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 4px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  width: 160px;
+  background-position: center;
+  background-size: cover;
+}
+
+.item {
+  opacity: 0;
+}
+
+.item.is-visible {
+  -webkit-animation: Item2 600ms ease-in forwards;
+          animation: Item2 600ms ease-in forwards;
+}
+
+@-webkit-keyframes Item {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3) rotateY(90deg);
+            transform: scale(0.3) rotateY(90deg);
+  }
+  70% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes Item {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3) rotateY(90deg);
+            transform: scale(0.3) rotateY(90deg);
+  }
+  70% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes Item2 {
+  0% {
+    opacity: 0;
+    height: 0%;
+    padding: 0px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes Item2 {
+  0% {
+    opacity: 0;
+    height: 0%;
+    padding: 0px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.grid .item:nth-child(1) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/52e3dd40435bb10ff3d8992cc12c30771037dbf85254794e702672d69f4b_640.jpg);
+}
+
+.grid .item:nth-child(2) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/57e6d0404d5baa14f1dc8460962e33791c3ad6e04e507441722a72dd944ac3_640.jpg);
+}
+
+.grid .item:nth-child(3) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/55e0d1464d52aa14f1dc8460962e33791c3ad6e04e507441722a72dc9244c4_640.jpg);
+}
+
+.grid .item:nth-child(4) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/53e5dd45495aa914f1dc8460962e33791c3ad6e04e507749742d7cd79e4cc0_640.jpg);
+}
+
+.grid .item:nth-child(5) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/5ee5d5434c54b10ff3d8992cc12c30771037dbf852547940772c7dd59549_640.jpg);
+}
+
+.grid .item:nth-child(6) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/57e6d64a4c57ae14f1dc8460962e33791c3ad6e04e507441722978d6944fc3_640.jpg);
+}
+
+.grid .item:nth-child(7) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/57e6d741485bae14f1dc8460962e33791c3ad6e04e5074417d2d73dc9149c4_640.jpg);
+}
+
+.grid .item:nth-child(8) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/57e1d0454857ac14f1dc8460962e33791c3ad6e04e507441722872d7964dc6_640.jpg);
+}
+
+.grid .item:nth-child(9) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/54e6dc4b4d51ad14f1dc8460962e33791c3ad6e04e507440762879dc964ec4_640.jpg);
+}
+
+.grid .item:nth-child(10) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/55e6dc464b57af14f1dc8460962e33791c3ad6e04e5074417d2e7ed6964acd_640.jpg);
+}
+
+.grid .item:nth-child(11) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/55e9d443435aa814f1dc8460962e33791c3ad6e04e507440762e7adc9544c0_640.jpg);
+}
+
+.grid .item:nth-child(12) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/54e8d4444d50af14f1dc8460962e33791c3ad6e04e5074417d2e7ed69449c7_640.jpg);
+}
+
+.grid .item:nth-child(13) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/52e6d1474a57a414f1dc8460962e33791c3ad6e04e507441722872d5904bc7_640.jpg);
+}
+
+.grid .item:nth-child(14) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/54e7d1454953ae14f1dc8460962e33791c3ad6e04e5074417c2e7dd3904dc5_640.jpg);
+}
+
+.grid .item:nth-child(15) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/52e9d542425ba814f1dc8460962e33791c3ad6e04e507441722a72dc9e4bc7_640.jpg);
+}
+
+.grid .item:nth-child(16) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/53e4d2464a56a914f1dc8460962e33791c3ad6e04e507440722d7cd39345c1_640.jpg);
+}
+
+.grid .item:nth-child(17) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/57e6d0404d5baa14f1dc8460962e33791c3ad6e04e507441722a72dd944ac3_640.jpg);
+}
+
+.grid .item:nth-child(18) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/57e5d3464f5bab14f1dc8460962e33791c3ad6e04e50744172297cdc904dcc_640.jpg);
+}
+
+.grid .item:nth-child(19) {
+  background-image: url(https://randomwordgenerator.com/img/picture-generator/57e4d5424850a914f1dc8460962e33791c3ad6e04e50744172297cd5914cc7_640.jpg);
+}
+
+.grid .item:nth-child(4n-5) {
+  height: 50px;
+}
+
+.grid .item:nth-child(2n) {
+  height: 300px;
+}
+
+.grid .item:nth-child(3n) {
+  height: 120px;
+}
+/*# sourceMappingURL=all.css.map */

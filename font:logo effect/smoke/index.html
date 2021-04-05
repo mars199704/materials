@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/all.css">
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    <p class="text smoke">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam porro rerum provident magnam culpa reiciendis labore ipsa corporis qui non facilis iure quia, explicabo exercitationem enim veniam rem dolore, ratione accusamus accusantium dolorem nulla ipsam tenetur eos? Harum voluptate, ab culpa cumque unde sed rerum ullam quos, corrupti, eaque totam?</p>
+  </section>
+
+  <section>
+    <p class="text jump">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+  </section>
+
+  <script>
+
+    // split text into letters
+    const text = document.querySelectorAll('.text')
+    text.forEach(e => {
+      e.innerHTML = e.textContent.replace(/\S/g,"<span>$&</span>")
+    })
+
+    // add active class on hovered <span> 
+    const smokeLetters = document.querySelectorAll('.smoke span')
+    for (let i = 0; i < smokeLetters.length; i++) {
+      smokeLetters[i].addEventListener('mouseover', function(){
+        smokeLetters[i].classList.add('active')
+      })
+    }
+
+    // toggle active class on hovered <span> 
+    const jumpLetters = document.querySelectorAll('.jump span')
+    for (let i = 0; i < jumpLetters.length; i++) {
+      jumpLetters[i].addEventListener('mouseover', function(){
+        jumpLetters[i].classList.toggle('active')
+      })
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.glass{
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(to right bottom, 
+  rgba(255, 255, 255, 0.7), 
+  rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+  z-index: 3;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+
+.circle1, .circle2{
+  background: #fff;
+  background: linear-gradient(to right bottom, 
+  rgba(255, 255, 255, 0.8), 
+  rgba(255, 255, 255, 0.3));
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.circle1{
+  top: 5%;
+  right: 15%;
+}
+
+.circle2{
+  bottom: 5%;
+  left: 10%;
+}
+
+.dashboard{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right bottom, 
+  rgba(255, 255, 255, 0.8), 
+  rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+}
+
+.link{
+  display: flex;
+  margin: 2rem 0rem;
+  padding: 1rem 5rem;
+  align-items: center;
+  h2{
+    padding: 0rem 2rem;
+  }
+}
+
+.pro{
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);border-radius: 2rem;
+  color: #fff;
+  padding: 1rem;
+}
+
+.games{
+  flex: 2;
+}

@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav{
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  height: 50px;
+  width: 250px;
+  transition: 0.5s;
+  color: #fff;
+  overflow: hidden;
+  .toggle{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #2196f3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    font-size: 20px;
+    cursor: pointer;
+    &::before{
+      content: 'Menu';
+      margin-right: 10px;
+    }
+    span{
+      position: relative;
+      width: 20px;
+      height: 50px;
+      &::before{
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transition: 0.5s;
+      }
+      &::after{
+        content: '';
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+nav .toggle.active::before{
+  content: 'Close';
+  margin-right: 10px;
+}
+
+nav .toggle.active span::before{
+  transform: rotate(225deg);
+  top: 24px;
+}
+
+nav .toggle.active span::after{
+  transform: rotate(-225deg);
+  bottom: 24px;
+}
+
+nav.active{
+  height: 350px;
+}
+
+nav ul{
+  position: relative;
+  background: #000;
+  li{
+    list-style: none;
+    a{
+      text-decoration: none;
+      position: relative;
+      display: block;
+      padding: 10px 20px;
+      height: 50px;
+      color: #fff;
+      font-size: 18px;
+      transition: 1s;
+      &:hover{
+        background: #2196f3;
+        transition: 0s;
+      }
+    }
+  }
+}
+
+.page{
+  width: 100%;
+  height: 100vh;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  color: gray;
+}

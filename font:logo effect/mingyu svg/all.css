@@ -1,0 +1,95 @@
+/* auto */
+
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  background-color: #4C7194;
+}
+
+.logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* .logo path:nth-child(1){
+  stroke-dasharray: 1429px;
+  stroke-dashoffset: 1429px;
+  animation: line 2s ease forwards,
+    fill 1s ease forwards 3s
+}
+.logo path:nth-child(2){
+  stroke-dasharray: 421px;
+  stroke-dashoffset: 421px;
+  animation: line 2s ease forwards 0.6s,
+    fill 1s ease forwards 3s;
+}
+.logo path:nth-child(3){
+  stroke-dasharray: 1019px;
+  stroke-dashoffset: 1019px;
+    animation: line 2s ease forwards 0.9s,
+    fill 1s ease forwards 3s;
+}
+.logo path:nth-child(4){
+  stroke-dasharray: 1059px;
+  stroke-dashoffset: 1059px;
+    animation: line 2s ease forwards 1.2s,
+    fill 1s ease forwards 3s;
+}
+.logo path:nth-child(5){
+  stroke-dasharray: 666px;
+  stroke-dashoffset: 666px;
+    animation: line 2s ease forwards 1.5s,
+    fill 1s ease forwards 3s;
+}
+.logo path:nth-child(6){
+  stroke-dasharray: 856px;
+  stroke-dashoffset: 856px;
+    animation: line 2s ease forwards 1.8s,
+    fill 1s ease forwards 3s;
+} */
+
+/* @keyframes line{
+  100%{
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes fill{
+  0%{
+    fill: transparent;
+  }
+  100%{
+    fill: white;
+  }
+} */
+
+
+
+/* scroll */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 1000vh;
+  width: 100%;
+  background-color: #4C7194;
+}
+
+.logo{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

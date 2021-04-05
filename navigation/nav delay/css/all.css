@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  height: 50px;
+  width: 250px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+  overflow: hidden;
+}
+
+nav .toggle {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #2196f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+nav .toggle::before {
+  content: 'Menu';
+  margin-right: 10px;
+}
+
+nav .toggle span {
+  position: relative;
+  width: 20px;
+  height: 50px;
+}
+
+nav .toggle span::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .toggle span::after {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .toggle.active::before {
+  content: 'Close';
+  margin-right: 10px;
+}
+
+nav .toggle.active span::before {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  top: 24px;
+}
+
+nav .toggle.active span::after {
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+  bottom: 24px;
+}
+
+nav.active {
+  height: 350px;
+}
+
+nav ul {
+  position: relative;
+  background: #000;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  height: 50px;
+  color: #fff;
+  font-size: 18px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+nav ul li a:hover {
+  background: #2196f3;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+  background-color: lightblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 8rem;
+  color: gray;
+}
+/*# sourceMappingURL=all.css.map */
